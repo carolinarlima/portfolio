@@ -1,0 +1,17 @@
+.about {
+  margin-top: 88px;
+  display: grid;
+}
+
+.about .img{
+    background: url(../img/orquidea.PNG) no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+    .about{
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 14px;
+    }
+    
+}
