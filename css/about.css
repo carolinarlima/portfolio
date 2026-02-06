@@ -1,17 +1,63 @@
 .about {
   margin-top: 88px;
   display: grid;
+  margin: 30px;
+  line-height: 1.5;
 }
 
-.about .img{
-    background: url(../img/orquidea.PNG) no-repeat;
-    background-size: cover;
+.about .text-content span {
+  color: var(--accent-color);
+}
+
+.about .text-content h1 {
+  text-align: center;
+}
+
+.about .text-content h2 {
+  text-align: start;
+  border-left: 3px solid var(--color-1);
+  padding-left: 15px;
+}
+
+.about .img {
+  background: url(../img/orquidea.jpg) no-repeat;
+  background-size: cover;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
-    .about{
+  .about {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 14px;
-    }
-    
+    margin: 88px 0 0 50px;
+  }
+
+  .about .text-content h1 {
+    margin-bottom: 20px;
+  }
+
+  .about .img {
+    display: flex;
+    border: solid var(--color-1);
+    border-radius: 16px;
+    background-color: var(--card-color);
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about .img:hover {
+    opacity: 30%;
+    border: solid var(--color-2);
+  }
+
+  .about .text-content h2:hover {
+    border-left: 3px solid var(--color-2);
+    padding-left: 24px;
+  }
+
+  .about .text-content span:hover {
+    color: var(--color-2);
+    padding: 2px;
+  }
 }
