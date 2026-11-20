@@ -5,15 +5,12 @@
 }
 
 :root {
-  --bg-color: #030303;
-  --header-color: #1c0710; /*Header*/
-  --color-1: #3b0829; /*hover, borda ou gradiante*/
-  --color-2: #331a3a; /*hover, borda ou gradiante*/
-  --card-color: #261b29; /*Fundo de card*/
-  --accent-color: #ca7a87; /*Cor para destaque*/
-  --text-color: #d3d3d3; /*Cor de texto*/
+  --bg-color: #ffffff;
+  --header-bg: rgba(222, 220, 224, 0.186);
+  --glass-border: 1px solid rgba(214, 205, 205, 0.08);
+  --glass-shadow: 0 4px 24px rgba(187, 184, 184, 0.35);
+  --accent-color: #38bdf8;
 
-  --h1-size: 30px;
   --h2-size: 28px;
   --h3-size: 24px;
   --h4-size: 16px;
@@ -49,11 +46,6 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-h1 {
-  font-size: var(--body1-size);
-  font-weight: var(--title-weight);
-}
-
 h2 {
   font-size: var(--body2-size);
   font-weight: var(--text-weight);
@@ -69,11 +61,26 @@ h4 {
   font-weight: var(--text-weight);
 }
 
-@media screen and (min-width: 1024px) {
-  h1 {
-    font-size: var(--h1-size);
-  }
+@media (max-width: 576px) {
+    .hero .hero-title {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 768px) {
+    .hero .hero-title {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 992px) {
+    .hero .hero-title {
+        font-size: 3rem;
+    }
+}
 
+@media screen and (min-width: 1024px) {
+  .hero .hero-title {
+        font-size: 3.5rem;
+    }
   h2 {
     font-size: var(--h2-size);
   }
