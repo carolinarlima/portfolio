@@ -5,14 +5,13 @@
 }
 
 :root {
-  --bg-color: #ffffff;
-  --header-bg: rgba(222, 220, 224, 0.186);
-  --glass-border: 1px solid rgba(214, 205, 205, 0.08);
-  --glass-shadow: 0 4px 24px rgba(187, 184, 184, 0.35);
-  --accent-color: #38bdf8;
+  --bg-color: #fafafa;
+  --accent-color: #62cbf8;
+  --title-color: #8e57ec;
+  --text-color: #393d42;
 
-  --h2-size: 28px;
-  --h3-size: 24px;
+  --h2-size: 24px;
+  --h3-size: 22px;
   --h4-size: 16px;
   --body1-size: 20px;
   --body2-size: 18px;
@@ -41,7 +40,6 @@ button {
 }
 
 body {
-  background-color: var(--bg-color);
   color: var(--text-color);
   font-family: "Raleway", sans-serif;
 }
