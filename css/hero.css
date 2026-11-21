@@ -6,14 +6,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 80px;
+  opacity: 0;
+  animation: revealTitulo 2s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
 }
 
 .main-hero .hero-title {
   font-size: 3.5rem;
-  font-weight: var(--text-weight);
+  font-weight: var(--title-weight);
   color: var(--title-color);
   text-align: center;
-  padding-top: 100px;
 }
 
 .main-hero h2 {
@@ -26,7 +28,6 @@
 
 h4 {
   font-size: 0.9rem;
-  font-weight: var(--title-weight);
   font-style: italic;
   color: var(--text-color);
   padding-top: 6px;
@@ -54,6 +55,19 @@ img {
   height: auto;
 }
 
+@keyframes revealTitulo {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
 @media (min-width: 768px) {
   .main-hero {
     display: grid;
@@ -63,12 +77,9 @@ img {
   }
 }
 @media (min-width: 1024px) {
-  .main-hero {
-    margin-top: 50px;
-  }
-
   .main-hero img {
     max-width: auto;
     height: auto;
+    padding-top: 50px;
   }
 }
