@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 100px;
   opacity: 0;
   animation: revealTitulo 2s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
 }
@@ -15,6 +15,7 @@
   font-size: 3.5rem;
   font-weight: var(--title-weight);
   color: var(--title-color);
+  padding-top: 50px;
   text-align: center;
 }
 
@@ -23,7 +24,6 @@
   font-weight: var(--text-weight);
   color: var(--accent-color);
   text-align: center;
-  padding-top: 20px;
 }
 
 h4 {
